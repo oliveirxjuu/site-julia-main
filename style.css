@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+body{
+  font-family: 'Inter', sans-serif !important;
+}
+
+.div_foto_bio {
+    padding: 95px 220px 110px 220px;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.div_foto_bio h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+.bio {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 0.56) !important;
+
+}
+
+.foto_perfil {
+    border-radius: 50%;
+    padding: 0 !important;
+    width: 150px !important;
+    height: 150px;
+}
+
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+    padding: 0 15px 15px 0;
+  }
+  @media (max-width: 575px) {
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .grid-sizer,
+    .grid-item {
+      width: 50%;
+    }
+
+  }
+  
+  /* To change the amount of columns on larger devices, uncomment the code below */
+  
+  /* @media (min-width: 768px) and (max-width: 991px) {
+    .grid-sizer,
+    .grid-item {
+      width: 33.333%;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .grid-sizer,
+    .grid-item {
+      width: 25%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .grid-sizer,
+    .grid-item {
+      width: 20%;
+    }
+  } */
+  
+  .grid-item {
+    float: left;
+  }
+  
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .img-futebol {
+    border-radius: 3% !important;
+  }
+
+  

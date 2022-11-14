@@ -1,0 +1,97 @@
+.<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+  <script src="main.js"></script>
+  <title>Julia Oliveira</title>
+</head>
+
+<body>
+      
+
+  <main>
+
+    <div class="container mt-2">
+      
+      <nav class="mb-4">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Pagina Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recados-forms.html">Comentários</a>
+          </li>
+        </ul>
+      </nav>       
+    </header>
+    <main> 
+        <section id="principal">
+            <div class="container">
+                <h3>Deixe aqui seu comentário</h3>	
+                <form class="form-horizontal" action="recados-gravar.php" method="POST">
+                <div class="form-group col-md-6">
+                    <label for="txtnome" class="col-md-2 control-label">Nome:</label>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" name="txtnome">
+                    </div> 
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="optturma" class="col-md-2 control-label">Turma:</label>
+                    <div class="col-md-6">
+                        <select name="optturma" class="form-control">
+                            <option value="0"> Selecione...</option>
+                            <option value="1C"> 1ºC </option>
+                            <option value="2C"> 2ºC </option>
+                            <option value="3C"> 3ºC </option>
+                        </select> 
+                    </div> 
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtrecado" class="col-md-3 control-label">Comentário:</label>
+                    <div class="col-md-12">
+                        <textarea name="txtrecado" class="form-control" cols="30" rows="4"></textarea>
+                    </div> 
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="groupButton"></label>
+                    <div class="col-md-3">
+                        <input type="submit" class="btn btn-warning" value="Enviar comentário">
+                    </div>
+                </div>
+                </form>
+                <h3>Seu comentário estará visível apenas após a aprovação</h3>
+            </div>
+        </section>        
+    </main>
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Copyright -->
+        <div class="rodape text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-dark" href="#">Julia Oliveira</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+  </main>
+  
+</body>
+
+</html>

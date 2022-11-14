@@ -1,0 +1,3 @@
+http://localhost/site-julia-main/recados.php --recados
+
+http://localhost/site-julia-main/index.html --site

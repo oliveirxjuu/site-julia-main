@@ -1,0 +1,70 @@
+      <div class="rodape row mt-4" style="background-color: #F5F5F5; height: 17rem;">
+        <p>Copyright 2022</p>
+        <p>Feito por Julia Oliveira</p>
+      </div>
+
+      https://www.iloveimg.com/pt/recortar-imagem
+
+
+      <div class="" style="max-width: 80rem;">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="fotos/bayern_munchen.jpg" class="d-block w-100" style="object-fit: cover;" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="fotos/cruzeiro.jpg" class="d-block w-100" style="object-fit: cover; " alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="fotos/julia-real_madrid.jpg" class="d-block w-100" style="object-fit: cover;" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+<div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+
+
+
+
+<main> 
+        <section id="lista-recados">
+            <div class="container">                
+            <h1>Meus recados</h1>
+            <p><a href="recados-form.html">Clique aqui</a> para deixar o seu recado</p><br>
+            
+            <?php
+                $sql = "SELECT * FROM recados";
+                $conexao = new PDO('mysql:host=127.0.0.1;dbname=site-julia','root','');
+                $resultado = $conexao->query($sql);
+                $lista = $resultado->fetchAll();
+            ?>
+
+            <?php foreach ($lista as $linha): ?>
+                <div class="balao">
+                    <p class="recado"><?php echo $linha['recado'] ?></p>			
+                    <h4 class="nome"><?php echo $linha['nome'] ?></h4>
+                </div>
+            <?php endforeach ?>
+
+            </div>
+        </section>        
+    </main>
+
+
+
+
+
+    <div class=" mb-2 form-group d-grid gap-2 col-6 mx-auto">
+            <label for="groupButton"></label>
+            <input type="submit" class="btn btn-primary" value="Enviar comentário">
+          </div>
